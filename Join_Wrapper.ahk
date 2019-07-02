@@ -13,8 +13,8 @@ class join_joaomgcd {
 	
 	__New(apiKEY) {
 		
-		this.apiKey = apiKEY
-		this.DeviceIDS = Object()
+		this.apiKey := apiKEY
+		this.DeviceIDS := ids := __Get_DeviceIDS(apiKEY)
 		
 	}
 	__Get_DeviceIDS(vjoin_API_KEY) {
