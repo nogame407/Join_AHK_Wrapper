@@ -9,16 +9,16 @@
 
 */
 
-class join_joaomgcd {
+class Join_API {
 	
 	__New(apiKEY) {
 		
 		this.apiKey := apiKEY
-		this.DeviceIDS := ids := __Get_DeviceIDS(apiKEY)
+		this.deviceID := IDS := Join_API.__Get_DeviceIDS(apiKEY)
 		
 	}
-	__Get_DeviceIDS(vjoin_API_KEY) {
-		vjoin_DeviceIDs_URL = https://joinjoaomgcd.appspot.com/_ah/api/registration/v1/listDevices?apikey=%vjoin_API_KEY%
+	__Get_DeviceIDS(apiKEY) {
+		vjoin_DeviceIDs_URL = https://joinjoaomgcd.appspot.com/_ah/api/registration/v1/listDevices?apikey=%apiKEY%
 		
 		fetchDevicesIDsResponse := Object()
 		
