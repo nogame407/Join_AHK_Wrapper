@@ -14,7 +14,8 @@ class Join_API {
 	__New(apiKEY) {
 		
 		this.apiKey := apiKEY
-		this.deviceID := IDS := Join_API.__Get_DeviceIDS(apiKEY)
+		;this.deviceIDsList := IDS := 
+		Join_API.__Get_DeviceIDS(apiKEY)
 		
 	}
 	__Get_DeviceIDS(apiKEY) {
@@ -44,6 +45,10 @@ class Join_API {
 		}
 			
 		parsedJSON := JSON.load(Response)
+		
+		For key, val in parsedJson {
+			
+		}
 		
 		return parsedJSON
 	}
